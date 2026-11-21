@@ -1,4 +1,4 @@
-# 🎬 Cine Leandro v2
+# 🎬 Cine Leandro 
 
 ![Python](https://img.shields.io/badge/Python-3.13-3776AB?logo=python&logoColor=white)
 ![Django](https://img.shields.io/badge/Django-5.2-092E20?logo=django&logoColor=white)

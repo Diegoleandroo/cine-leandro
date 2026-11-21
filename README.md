@@ -18,6 +18,17 @@ O sistema **abre na tela de Entrar**: filmes, avisos e preferências só aparece
 
 **Pilha:** React + Motion · Django + Django REST Framework · PostgreSQL · Docker · AWS (deploy preparado em [`docs/AWS.md`](docs/AWS.md))
 
+
+![Tela de Entrar do Cine Leandro, com os pôsteres dos próximos lançamentos](docs/imagens/01-entrar.jpg)
+
+## 📸 Telas
+
+| Carrossel dos populares (depois do login) | Catálogo com filtro por categoria |
+|---|---|
+| ![Início com o carrossel dos filmes populares](docs/imagens/02-inicio.jpg) | ![Grade de filmes em cartaz](docs/imagens/03-catalogo.jpg) |
+| **Página do filme, com onde assistir** | **Próximos lançamentos e avisos de estreia** |
+| ![Página de detalhes do filme com sinopse e serviços de streaming](docs/imagens/05-filme.jpg) | ![Lançamentos com contagem de dias e botão de aviso](docs/imagens/04-lancamentos.jpg) |
+
 ---
 
 ## 🔁 O que mudou da v1 para a v2

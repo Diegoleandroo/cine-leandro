@@ -36,3 +36,7 @@ frontend/dist/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# ---------------------------------------------------------------- prints originais
+# (pesados; o README usa as versões .jpg otimizadas da mesma pasta)
+docs/imagens/*.png

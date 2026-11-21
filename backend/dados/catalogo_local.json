@@ -1,0 +1,256 @@
+{
+  "_sobre": "Clássicos reais usados como plano B quando o TMDB não está disponível. Sinopses escritas para o projeto; sem pôsteres, notas ou trailers (esses vêm do TMDB).",
+  "generos": [
+    {
+      "id": 28,
+      "pt": "Ação",
+      "en": "Action",
+      "es": "Acción"
+    },
+    {
+      "id": 12,
+      "pt": "Aventura",
+      "en": "Adventure",
+      "es": "Aventura"
+    },
+    {
+      "id": 16,
+      "pt": "Animação",
+      "en": "Animation",
+      "es": "Animación"
+    },
+    {
+      "id": 35,
+      "pt": "Comédia",
+      "en": "Comedy",
+      "es": "Comedia"
+    },
+    {
+      "id": 80,
+      "pt": "Crime",
+      "en": "Crime",
+      "es": "Crimen"
+    },
+    {
+      "id": 18,
+      "pt": "Drama",
+      "en": "Drama",
+      "es": "Drama"
+    },
+    {
+      "id": 10751,
+      "pt": "Família",
+      "en": "Family",
+      "es": "Familia"
+    },
+    {
+      "id": 14,
+      "pt": "Fantasia",
+      "en": "Fantasy",
+      "es": "Fantasía"
+    },
+    {
+      "id": 10749,
+      "pt": "Romance",
+      "en": "Romance",
+      "es": "Romance"
+    },
+    {
+      "id": 878,
+      "pt": "Ficção científica",
+      "en": "Science Fiction",
+      "es": "Ciencia ficción"
+    },
+    {
+      "id": 53,
+      "pt": "Thriller",
+      "en": "Thriller",
+      "es": "Suspense"
+    }
+  ],
+  "filmes": [
+    {
+      "id": "local-poderoso-chefao",
+      "titulo": "O Poderoso Chefão",
+      "sinopse": "O patriarca de uma família mafiosa de Nova York tenta passar o comando dos negócios ao filho mais novo, que nunca quis fazer parte desse mundo.",
+      "data_lancamento": "1972-03-24",
+      "duracao_min": 175,
+      "generos": [
+        80,
+        18
+      ]
+    },
+    {
+      "id": "local-cidade-de-deus",
+      "titulo": "Cidade de Deus",
+      "sinopse": "Na favela carioca, entre os anos 60 e 80, um jovem que sonha ser fotógrafo acompanha a ascensão do crime organizado ao seu redor.",
+      "data_lancamento": "2002-08-30",
+      "duracao_min": 130,
+      "generos": [
+        80,
+        18
+      ]
+    },
+    {
+      "id": "local-central-do-brasil",
+      "titulo": "Central do Brasil",
+      "sinopse": "Uma escritora de cartas da estação Central do Brasil acaba atravessando o sertão ao lado de um menino que procura o pai.",
+      "data_lancamento": "1998-04-03",
+      "duracao_min": 113,
+      "generos": [
+        18
+      ]
+    },
+    {
+      "id": "local-interestelar",
+      "titulo": "Interestelar",
+      "sinopse": "Com a Terra se tornando inabitável, um ex-piloto parte numa missão por um buraco de minhoca em busca de um novo lar para a humanidade.",
+      "data_lancamento": "2014-11-07",
+      "duracao_min": 169,
+      "generos": [
+        12,
+        18,
+        878
+      ]
+    },
+    {
+      "id": "local-matrix",
+      "titulo": "Matrix",
+      "sinopse": "Um programador descobre que o mundo em que vive é uma simulação e se junta a um grupo rebelde que luta contra as máquinas.",
+      "data_lancamento": "1999-03-31",
+      "duracao_min": 136,
+      "generos": [
+        28,
+        878
+      ]
+    },
+    {
+      "id": "local-de-volta-para-o-futuro",
+      "titulo": "De Volta para o Futuro",
+      "sinopse": "Um adolescente viaja acidentalmente para 1955 num DeLorean e precisa garantir que os próprios pais se apaixonem.",
+      "data_lancamento": "1985-07-03",
+      "duracao_min": 116,
+      "generos": [
+        12,
+        35,
+        878
+      ]
+    },
+    {
+      "id": "local-toy-story",
+      "titulo": "Toy Story",
+      "sinopse": "Os brinquedos de um menino ganham vida quando ninguém está olhando, e a chegada de um astronauta abala a liderança do caubói Woody.",
+      "data_lancamento": "1995-11-22",
+      "duracao_min": 81,
+      "generos": [
+        16,
+        12,
+        35,
+        10751
+      ]
+    },
+    {
+      "id": "local-auto-da-compadecida",
+      "titulo": "O Auto da Compadecida",
+      "sinopse": "No sertão da Paraíba, João Grilo e Chicó vivem de golpes e esperteza até o dia em que precisam encarar o próprio julgamento.",
+      "data_lancamento": "2000-09-15",
+      "duracao_min": 104,
+      "generos": [
+        35,
+        18
+      ]
+    },
+    {
+      "id": "local-parasita",
+      "titulo": "Parasita",
+      "sinopse": "Uma família pobre de Seul se infiltra, um a um, no dia a dia de uma família rica, até que um segredo muda tudo.",
+      "data_lancamento": "2019-05-30",
+      "duracao_min": 132,
+      "generos": [
+        35,
+        53,
+        18
+      ]
+    },
+    {
+      "id": "local-viagem-de-chihiro",
+      "titulo": "A Viagem de Chihiro",
+      "sinopse": "Uma menina entra num mundo de espíritos e precisa trabalhar numa casa de banhos para salvar os pais, transformados em porcos.",
+      "data_lancamento": "2001-07-20",
+      "duracao_min": 125,
+      "generos": [
+        16,
+        10751,
+        14
+      ]
+    },
+    {
+      "id": "local-tropa-de-elite",
+      "titulo": "Tropa de Elite",
+      "sinopse": "Um capitão do BOPE no Rio de Janeiro procura um substituto enquanto enfrenta a pressão de uma operação durante a visita do papa.",
+      "data_lancamento": "2007-10-12",
+      "duracao_min": 115,
+      "generos": [
+        28,
+        80,
+        18
+      ]
+    },
+    {
+      "id": "local-senhor-dos-aneis",
+      "titulo": "O Senhor dos Anéis: A Sociedade do Anel",
+      "sinopse": "Um jovem hobbit recebe a missão de destruir um anel de poder e parte com uma comitiva rumo à terra sombria de Mordor.",
+      "data_lancamento": "2001-12-19",
+      "duracao_min": 178,
+      "generos": [
+        12,
+        14,
+        28
+      ]
+    },
+    {
+      "id": "local-pulp-fiction",
+      "titulo": "Pulp Fiction: Tempo de Violência",
+      "sinopse": "Histórias de gângsteres, um boxeador e um casal de assaltantes se cruzam em Los Angeles, contadas fora de ordem.",
+      "data_lancamento": "1994-10-14",
+      "duracao_min": 154,
+      "generos": [
+        53,
+        80
+      ]
+    },
+    {
+      "id": "local-ainda-estou-aqui",
+      "titulo": "Ainda Estou Aqui",
+      "sinopse": "Durante a ditadura militar, Eunice Paiva reconstrói a vida da família depois que o marido, o ex-deputado Rubens Paiva, desaparece.",
+      "data_lancamento": "2024-11-07",
+      "duracao_min": 137,
+      "generos": [
+        18
+      ]
+    },
+    {
+      "id": "local-titanic",
+      "titulo": "Titanic",
+      "sinopse": "Uma jovem da alta sociedade e um artista sem dinheiro se apaixonam a bordo do navio que naufragaria em sua viagem inaugural.",
+      "data_lancamento": "1997-12-19",
+      "duracao_min": 194,
+      "generos": [
+        18,
+        10749
+      ]
+    },
+    {
+      "id": "local-rei-leao",
+      "titulo": "O Rei Leão",
+      "sinopse": "Depois da morte do pai, o jovem leão Simba foge do reino e precisa decidir se volta para assumir o seu lugar.",
+      "data_lancamento": "1994-06-24",
+      "duracao_min": 88,
+      "generos": [
+        10751,
+        16,
+        18
+      ]
+    }
+  ]
+}

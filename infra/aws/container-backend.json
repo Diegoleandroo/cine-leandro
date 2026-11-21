@@ -1,0 +1,20 @@
+{
+  "image": "123456789012.dkr.ecr.us-east-1.amazonaws.com/cine-leandro-backend:latest",
+  "containerPort": 8000,
+  "environment": [
+    {"name": "DJANGO_DEBUG", "value": "0"},
+    {"name": "DJANGO_ALLOWED_HOSTS", "value": "ENDERECO-DO-SERVICO-EXPRESS,SEU-DOMINIO.cloudfront.net"},
+    {"name": "URL_FRONTEND", "value": "https://SEU-DOMINIO.cloudfront.net"},
+    {"name": "CORS_ALLOWED_ORIGINS", "value": "https://SEU-DOMINIO.cloudfront.net"},
+    {"name": "CINEMA_CATALOGO", "value": "auto"},
+    {"name": "CINEMA_EMAIL", "value": "ses"},
+    {"name": "SES_REMETENTE", "value": "avisos@SEU-DOMINIO.com"},
+    {"name": "AWS_REGION", "value": "us-east-1"},
+    {"name": "NUM_PROXIES", "value": "2"}
+  ],
+  "secrets": [
+    {"name": "DJANGO_SECRET_KEY", "valueFrom": "arn:aws:secretsmanager:us-east-1:123456789012:secret:cine-leandro/django-AbCdEf:DJANGO_SECRET_KEY::"},
+    {"name": "DATABASE_URL", "valueFrom": "arn:aws:secretsmanager:us-east-1:123456789012:secret:cine-leandro/django-AbCdEf:DATABASE_URL::"},
+    {"name": "TMDB_TOKEN", "valueFrom": "arn:aws:secretsmanager:us-east-1:123456789012:secret:cine-leandro/django-AbCdEf:TMDB_TOKEN::"}
+  ]
+}

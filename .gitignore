@@ -1,0 +1,38 @@
+# ---------------------------------------------------------------- segredos
+# O .env guarda o token do TMDB e a chave do Django: NUNCA vai para o GitHub.
+.env
+.env.*
+*.env
+# (o modelo sem segredos pode ir)
+!env.exemplo
+*.pem
+*.key
+credentials*
+segredos*/
+
+# ---------------------------------------------------------------- Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---------------------------------------------------------------- Node / build
+node_modules/
+frontend/dist/
+
+# ---------------------------------------------------------------- bancos e logs locais
+*.sqlite3
+*.db
+*.dump
+*.log
+
+# ---------------------------------------------------------------- editores e sistema
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini

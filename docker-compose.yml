@@ -1,0 +1,58 @@
+# Sobe o sistema inteiro na sua máquina:  docker compose up --build
+# Depois abra http://localhost:8080
+#
+# Ajustado para computadores com pouca memória:
+# - restart: se algum container cair, o Docker sobe ele de novo sozinho;
+# - Gunicorn com 2 processos (em vez de 3) e PostgreSQL mais enxuto;
+# - o backend só sobe quando o banco está pronto, e o frontend quando o backend responde.
+services:
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    command: ["postgres", "-c", "shared_buffers=64MB", "-c", "max_connections=30"]
+    environment:
+      POSTGRES_DB: cinema
+      POSTGRES_USER: cinema
+      POSTGRES_PASSWORD: cinema
+    volumes:
+      - dados-postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U cinema"]
+      interval: 3s
+      retries: 20
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    env_file:
+      - path: ./backend/.env
+        required: false
+    environment:
+      DATABASE_URL: postgres://cinema:cinema@db:5432/cinema
+      DJANGO_ALLOWED_HOSTS: localhost,127.0.0.1,backend
+      URL_FRONTEND: http://localhost:8080
+      GUNICORN_WORKERS: "2"
+      NUM_PROXIES: "1"  # o nginx do frontend fica na frente do Django
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/api/saude', timeout=4)"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 30s
+
+  frontend:
+    build: ./frontend
+    restart: unless-stopped
+    ports:
+      # "127.0.0.1:" = só este computador abre o site. Sem isso, qualquer pessoa
+      # no mesmo Wi-Fi conseguiria acessar pelo seu IP.
+      - "127.0.0.1:8080:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+
+volumes:
+  dados-postgres:
